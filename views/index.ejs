@@ -1,0 +1,78 @@
+<!-- Main Webpage here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js">
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<script src="slides.js">
+	</script>
+	
+	<title>Confessions Page</title>
+</head>
+
+<body>
+
+	<div class="topnav">
+		<a class="active" href="/">Home</a>
+    <a href="/confess">Confess</a>
+	</div>
+	<div class="title">
+		<h1>Confessions</h1>
+		<h3 style="font-size: 30px;">SFW Edition</h3>
+		<br>
+    </div>
+    <div class="posts">
+      <div class = "panel">
+        <% data.map(ele => { %>
+          <div class = "paneltext">
+            <h2><span id = "title"><%= ele.title %></span></h2>
+            <h3><span id="college"><%= ele.college %></span></h3>
+            <p><span id="post"><%= ele.post %></span></p>
+          </div>
+        <% }) %>
+      </div>
+      <!-- <div class = "panel">
+        <h2>Post Title #2</h2>
+        <p>hopefully we can get the text can go here</p>
+        <p>plz</p>
+        <p>plz</p>
+        <p>work</p>
+      </div>
+      <div class = "panel">
+        <h2>Post Title #3</h2>
+        <p>hopefully we can get the text can go here</p>
+        <p>plz</p>
+        <p>plz</p>
+        <p>work</p>
+      </div> -->
+      <a href = "#" class="buttonarrowleft" onclick="plusDivs(-1)">&#8249;</a>
+      <a href = "#" class="buttonarrowright" onclick="plusDivs(+1)">&#8250;</a>
+    </div>
+    <div class = "blackbottom">
+      </div>
+
+
+
+    <!-- <p>
+      latitude: <span id="latitude"></span>&deg;<br />
+      longitude: <span id="longitude"></span>&deg;
+    </p>
+    <label for="post">Enter your post</label>
+    <input id="post" value="Write your post here" />
+    <button id="submit">submit</button> -->
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- THIS IS RAW CODE FROM WHATEVER I HAD, NO DATABASE STUFF YET -->
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+</head>
+<body>
+  <!-- //MENU -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="confessions.html">Confess</a>
+  </div>
+  <div class = "title">
+    <h1>Confessions</h1>
+    <h3 style="font-size: 30px;">SFW Edition</h3>
+    <!-- <t>anonymous tea party</t> -->
+
+<!-- INPUTS -->
+  <div>
+    <form action="/api" method="POST">
+      <!-- //1. Asks for college -->
+      <label>College</label>
+      <br><br>
+      <select id="college" type = "text" name="college">
+        <option value = "">Select your College</option>
+        <option value="Berkeley">Berkeley</option>
+        <option value="Davis">Davis</option>
+        <option value="San Diego">San Diego</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Riverside">Riverside</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value = "Merced">Merced</option>
+        <option value="Irvine">Irvine</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value = "Santa Barbara"> Santa Barbara</option>
+        <option value="">Other</option>
+      </select>
+
+
+
+      <br><br>
+      <!-- 2. title of confession -->
+      <label>Title<label>
+      <br><br>
+      <input id="title" type = "text" name="title">
+      <br><br>
+      <!-- //3. Input your confession -->
+      <label>Your Anonymous Confession</label>
+      <br><br>
+      <textarea id = "post" name = "title" class = "confessiontextbox" rows="1" class="auto_height" oninput="auto_height(this)"></textarea>
+      <br><br>
+      <!-- //Submit Button -->
+      <button id="submit">Submit</button>
+    </form>
+
+  </div>
+<!-- Loads the js file -->
+    <script src="sketch.js"> </script> 
+</body>
+</html>
